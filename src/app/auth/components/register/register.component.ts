@@ -13,7 +13,7 @@ import {CurrentUserInterface} from "../../../shared/types/currentUser.interface"
   styleUrls: ['./register.component.scss']
 })
 export class RegisterComponent implements OnInit{
-  
+
   form!: FormGroup
   isSubmitting$!: Observable<boolean>
 
@@ -29,7 +29,6 @@ export class RegisterComponent implements OnInit{
   }
 
   initializeValues(): void {
-    // @ts-ignore
     this.isSubmitting$ = this.store.pipe(select(isSubmittingSelector))
     console.log('isSubmitting$', this.isSubmitting$)
   }
