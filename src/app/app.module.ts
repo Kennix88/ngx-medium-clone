@@ -8,6 +8,7 @@ import { AppComponent } from './app.component';
 import { AuthModule} from "./auth/auth.module";
 import {environment} from "../environments/environment";
 import {HttpClientModule} from "@angular/common/http";
+import {EffectsModule} from "@ngrx/effects";
 
 @NgModule({
   declarations: [
@@ -22,8 +23,9 @@ import {HttpClientModule} from "@angular/common/http";
     StoreDevtoolsModule.instrument({
       maxAge: 25,
       logOnly: environment.production,
-      autoPause: true,
-    })
+      autoPause: true
+    }),
+    EffectsModule.forRoot([])
   ],
   providers: [],
   bootstrap: [AppComponent]
