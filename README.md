@@ -11,12 +11,13 @@ At the moment, [RealWorld](https://github.com/gothinkster/realworld) is used as 
 
 <ul>
   <li>Registration module</li>
+  <li>Top bar + router menu</li>
+  <li>Login module</li>
 </ul>
 
 ## What is planned to be implemented:
 
 <ul>
-  <li>Login module</li>
   <li>Feed module</li>
   <li>Tag List Module</li>
   <li>Popular Tags module</li>
