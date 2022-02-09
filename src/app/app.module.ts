@@ -9,6 +9,7 @@ import { AuthModule} from "./auth/auth.module";
 import {environment} from "../environments/environment";
 import {HttpClientModule} from "@angular/common/http";
 import {EffectsModule} from "@ngrx/effects";
+import {TopBarModule} from "./shared/modules/topBar/topBar.module";
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import {EffectsModule} from "@ngrx/effects";
       logOnly: environment.production,
       autoPause: true
     }),
-    EffectsModule.forRoot([])
+    EffectsModule.forRoot([]),
+    TopBarModule
   ],
   providers: [],
   bootstrap: [AppComponent]
