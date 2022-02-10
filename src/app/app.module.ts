@@ -11,7 +11,7 @@ import {HTTP_INTERCEPTORS, HttpClientModule} from "@angular/common/http";
 import {EffectsModule} from "@ngrx/effects";
 import {TopBarModule} from "./shared/modules/topBar/topBar.module";
 import {PersistanseService} from "./shared/services/persistanse.service";
-import {AuthInterceptor} from "./shared/services/authInterceptor.sevices";
+import {AuthInterceptor} from "./shared/services/authInterceptor.service";
 import {GlobalFeedModule} from "./globalFeed/globalFeed.module";
 
 @NgModule({
