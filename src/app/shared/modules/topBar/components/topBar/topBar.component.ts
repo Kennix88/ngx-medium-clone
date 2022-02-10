@@ -6,8 +6,8 @@ import {currentUserSelector, isAnonymousSelector, isLoggedInSelector} from "../.
 
 @Component({
   selector: 'app-topBar',
-  templateUrl: './top-bar.component.html',
-  styleUrls: ['./top-bar.component.scss']
+  templateUrl: './topBar.component.html',
+  styleUrls: ['./topBar.component.scss']
 })
 export class TopBarComponent implements OnInit {
 
