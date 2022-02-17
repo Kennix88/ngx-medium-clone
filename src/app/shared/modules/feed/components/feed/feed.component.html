@@ -18,7 +18,7 @@
     <a [routerLink]="['/articles', article.slug]" class="preview-link">
       <h1>{{article.title}}</h1>
       <p>{{article.description}}</p>
-      HERE IS LIST OF TAGS
+      <app-tagList [tags]="article.tagList"></app-tagList>
     </a>
   </div>
   <app-pagination
